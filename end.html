@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name below to save your score!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="Submit" onclick="saveHighScore(event)" disabled>Save</button>
+            </form>
+            <a href="/game.html" class="btn">Play again</a>
+            <a href="/" class="btn"><i class="fa fa-home"></i> Home</a>
+        </div> 
+    </div>
+    <footer id="footer" class="top-10%">
+        &copy;Made by Leonard Peltea.
+      </footer>
+    <script src="end.js"></script>
+    <script src="https://kit.fontawesome.com/4f73f23e6f.js" crossorigin="anonymous"></script>
+</body>
+</html>
