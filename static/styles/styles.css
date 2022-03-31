@@ -26,13 +26,14 @@ h2{
 }
 
 .container{
+    justify-content: center;
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 80%;
-    margin:0 auto ;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -80,7 +81,7 @@ h2{
     transform: scale(1.03);
 }
 
-.btn[disabled]:hover{
+.button[disabled]:hover{
     cursor: not-allowed;
    transform: none;
 }
@@ -89,9 +90,59 @@ h2{
     background: rgb(218, 218, 5);
 }
 
+#info-button{
+    background: transparent;
+    border: none;
+}
+
+.button{
+    width: 20px;
+    height: 20px;
+    color: white;
+
+}
+
+.button:hover{
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+
+.fa-circle-question{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 20px;
+}
+
+.fa-arrow-rotate-right{
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
 .fa-crown{
-    font-size: 15px;
-    margin:3px 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fa-play{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fa-home{ 
+    font-size: 30px;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    margin: 0 50px;
+}
+
+.fa-box-archive{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .end-form-container{
@@ -108,12 +159,14 @@ input{
     padding: 1rem;
     font-size: 1.5rem;
     border: none;
+    border-radius: 10px;
 }
 
 input::placeholder{
     color:black;
     width: 100%;
     outline: none;
+   
 }
 
 #username{
@@ -123,7 +176,7 @@ input::placeholder{
 }
 
 #end-text{
-    font-size: 1.5rem;
+    font-size: 20px;
     color: white;
     text-align: center;
 }
@@ -132,37 +185,33 @@ input::placeholder{
     border: none;
 }
 
-.fa-home{ 
-    margin:3px 8px;
-    font-size: 2rem;
-    color: black;
-}
-
 #info-btn{
     display:flex;
     background: transparent;
     color: white;
     border: none;
     margin-left: 47%;
-   
 }
 #info-btn:hover{
-    cursor: pointer;
-    border: none;
+    cursor: not-allowed;
+    transform: none;
 }
 
-.fa-circle-question{
-    font-size: 30px;
+#info-button:hover{
+    cursor: pointer;
+    transform: none;
 }
 
 p{
     font-size:15px;
     padding: 5px;
+    color:black;
 }
 
 h3{
     font-size:25px;
     padding: 5px 0 10px 0;
+    color:black;
 }
 
 .modal{
@@ -195,6 +244,7 @@ h3{
 .modal-header .title{
     font-size: 30px;
     font-weight: bold;
+    color: black;
 }
 
 .modal-header .close-button{
@@ -237,14 +287,14 @@ h3{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     width: 100%;
-    height:30px;
-    margin-top: -1%;
+    height: 30px;
+    margin-top: 6%;
 }
 
 @media  screen and (max-width: 768px) {
     #footer{
         font-size: 15px;
-        margin-top: 1px;
+        margin-top: 30%;
     }
     h1{
         font-size: 30px;
@@ -254,6 +304,13 @@ h3{
         font-size: 25px;
     }
     .fa-circle-question{
+        font-size: 20px;
+        margin-left: 25%;
+    }
+    .fa-arrow-rotate-right{
+        font-size: 20px;
+    }
+    .fa-home{
         font-size: 20px;
     }
     .modal{
@@ -275,5 +332,11 @@ h3{
     }
     .btn{
         padding: 5px 10px;
+    }
+}
+
+@media screen and (max-height:350px) {
+    #footer{
+        margin-top: 40%;
     }
 }

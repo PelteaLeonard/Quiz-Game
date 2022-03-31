@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="static/styles/styles.css">
     <title>Quiz Game</title>
 </head>
 <body>
@@ -16,7 +15,7 @@
                 <div class="title">Instructions</div>
                 <button data-close-button class="close-button">&times;</button>
             </div>
-            <div class="modal-body" class="top:0">
+            <div class="modal-body">
                 <h3>Aim of the game</h3>
                 <p>
                     This game is all about of guessing the capital of the different countries. You have 20 countries where you need to choose which is the capital of the respective country.
@@ -30,18 +29,19 @@
             </div>
         </div>
         <div id="overlay"></div>
-    </header>
-    <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h2>Are you ready?</h2>
-            <a href="/game.html" class="btn">Play</a>
-            <a href="/highscores.html" id="highscore-btn" class="btn">High Score<i class="fas fa-crown"></i></a></a>
+
+        <div class="container">
+            <div id="home" class="flex-column flex-center">
+                <h2>Are you ready?</h2>
+                <a href="./game.html" class="btn"><i class="fa-solid fa-play"></i></a>
+                <a href="./highscores.html" id="highscore-btn" class="btn"><i class="fas fa-crown"></i></a>
+            </div>
         </div>
-    </div>
+    </header>
     <footer id="footer">
         &copy;Made by Leonard Peltea.
       </footer>
-    <script src="script.js"></script>
+    <script src="static/js/script.js"></script>
     <script src="https://kit.fontawesome.com/4f73f23e6f.js" crossorigin="anonymous"></script>
 </body>
 </html>
