@@ -92,7 +92,10 @@ h2{
 
 #info-button{
     background: transparent;
+    color: white;
     border: none;
+    justify-content: center;
+    margin: 0;
 }
 
 .button{
@@ -113,7 +116,9 @@ h2{
     color: white;
     font-size: 30px;
     font-weight: bold;
-    margin: 10px 20px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
 }
 
 .fa-arrow-rotate-right{
@@ -190,7 +195,7 @@ input::placeholder{
     background: transparent;
     color: white;
     border: none;
-    margin-left: 47%;
+    margin-left: 48%;
 }
 #info-btn:hover{
     cursor: not-allowed;
@@ -303,6 +308,9 @@ h3{
     h2{
         font-size: 25px;
     }
+    .fa-play{
+        font-size: 20px;
+    }
     .fa-circle-question{
         font-size: 20px;
         margin-left: 25%;
@@ -311,6 +319,9 @@ h3{
         font-size: 20px;
     }
     .fa-home{
+        font-size: 20px;
+    }
+    .fa-crown{
         font-size: 20px;
     }
     .modal{
@@ -333,10 +344,57 @@ h3{
     .btn{
         padding: 5px 10px;
     }
+    .modal-body{
+        text-align: center;
+    }
 }
 
-@media screen and (max-height:350px) {
-    #footer{
-        margin-top: 40%;
+@media screen and (max-height: 500px) {
+    .container{
+        display:grid;
+        height: 50vh;
     }
+    #footer{
+        font-size: 10px;
+        margin-top: 15%;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+    .fa-circle-question{
+        font-size: 15px;
+        margin-left: 25%;
+    }
+    .fa-arrow-rotate-right{
+        font-size: 15px;
+    }
+    .fa-crown{
+        font-size: 15px;
+    }
+    .fa-play{
+        font-size: 15px;
+    }
+    .fa-home{
+        font-size: 15px;
+    }
+    .modal{
+        top: -20%;
+    }
+    p{ 
+        font-size: 8px;
+    }
+    h3{
+        font-size: 8px;
+    }
+    .modal-header .title{
+        font-size: 10px;
+    }
+    .btn{
+        padding: 5px 10px;
+    }
+   
 }

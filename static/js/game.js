@@ -200,8 +200,8 @@ const getNewQuestion = () => {
     question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
     });
 
     availableQuestions.splice(questionsIndex, 1);
@@ -211,7 +211,7 @@ const getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e =>{
-        if(!acceptingAnswers) return
+        if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
@@ -220,21 +220,21 @@ choices.forEach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
         if(classToApply === 'correct'){
-            incrementScore(SCORE_POINTS)
+            incrementScore(SCORE_POINTS);
         };
 
-        selectedChoice.parentElement.classList.add(classToApply)
+        selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() =>{
-            selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
         }, 1000);
     });
 });
 
 incrementScore = num => {
-    score +=num
-    scoreText.innerText = score
+    score +=num;
+    scoreText.innerText = score;
 };
 
 startGame();
