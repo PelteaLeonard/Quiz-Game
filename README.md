@@ -22,14 +22,14 @@ My game is a great way to demonstrate the compentencies I would list on my resum
 
 I drew my wireframes using Balsamiq. I have done two wireframes for each page to show my consideration of how to make my website responsive. The links to the files are below:
 
--[home.html(md-lg-and-xl)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/home-page-xl.pdf)
--[home.html(sm)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/home-page-sm.pdf)
--[game.html(md-lg-and-xl)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/game-page-xl.pdf)
--[game.html(sm)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/game-page-sm.pdf)
--[(end.html(md-lg-and-xl)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/end-page-xl.pdf)
--[(end.html(sm)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/end-page-sm.pdf)
--[(highscore.html(md-lg-and-xl)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/high-score-page-xl.pdf)
--[(highscore.html(sm)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/high-score-page-sm.pdf)
+- [home.html(md-lg-and-xl)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/home-page-xl.pdf)
+- [home.html(sm)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/home-page-sm.pdf)
+- [game.html(md-lg-and-xl)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/game-page-xl.pdf)
+- [game.html(sm)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/game-page-sm.pdf)
+- [(end.html(md-lg-and-xl)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/end-page-xl.pdf)
+- [(end.html(sm)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/end-page-sm.pdf)
+- [(highscore.html(md-lg-and-xl)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/high-score-page-xl.pdf)
+- [(highscore.html(sm)](https://github.com/PelteaLeonard/Quiz-Game/blob/master/static/wireframes/high-score-page-sm.pdf)
 
 There are some differences between my wireframes and my final website.
 
