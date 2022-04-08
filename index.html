@@ -29,15 +29,79 @@
             </div>
         </div>
         <div id="overlay"></div>
-
-        <div class="container">
-            <div id="home">
-                <h2>Are you ready?</h2>
-                <a href="./game.html" class="btn"><i class="fa-solid fa-play"></i></a>
-                <a href="./highscores.html" id="highscore-btn" class="btn"><i class="fas fa-crown"></i></a>
-            </div>
-        </div>
     </header>
+        <section id="home">
+            <div class="container">
+                    <h2>Are you ready?</h2>
+                    <button id="play-btn"> Play</a>
+                    <button id="scores-btn"> High Score</a>
+            </div>
+        </section>
+
+        <section id="quiz" class="hidden">
+            <div class="container">
+                <div id="game" class="justify-center flex-row">
+                    <div id="hud">
+                        <div class="hud-item">
+                            <p id="progressText" class="hub-prefix">
+                                Question
+                            </p>
+                            <div id="progressBarr">
+                                <div id="progressBarrFull">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hud-item">
+                            <p class="hud-prefix">Score</p>
+                            <h1 class="hud-main-text" id="score">0</h1>
+                        </div>
+                    </div>
+                    <h2 id="question">What is the answer to this question?</h2>
+                    <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">Choice 1</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="2">Choice 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="3">Choice 3</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text" data-number="4">Choice 4</p>
+                    </div>
+                </div>
+            </div>
+            <button id="home-btn"><i class="fa fa-home"></i></button>
+            <button id="next-btn"><i class="fa-solid fa-forward"></i></button>
+        </section>
+
+        <section id="results" class="hidden">
+            <div class="container">
+                <div id="end" class="flex-center flex-column">
+                    <h1 id="finalScore">0</h1>
+                    <form class="end-form-container">
+                        <h2 id="end-text">Enter your name below to save your score!</h2>
+                        <input type="text" name="name" id="username" placeholder="Enter your name">
+                        <button class="btn" id="saveScoreBtn" type="Submit" onclick="saveHighScore(event)" disabled>Save</button>
+                    </form>
+                </div> 
+            </div>
+            <button id="results-home-btn"><i class="fa fa-home"></i></button>
+        </section>
+
+        <section id="scores" class="hidden">
+            <div class="container">
+                <div id="highScores" class="flex-centre flex-column"  >
+                    <h2 id="finalScore">High Score</h2>
+                    <ul id="highScoresList"></ul>
+                </div>
+            </div>
+            <button id="scores-home-btn"><i class="fas fa-home"></i></button>
+        </section>
     <footer id="footer">
         &copy;Made by Leonard Peltea.
       </footer>
