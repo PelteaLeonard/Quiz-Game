@@ -11,7 +11,7 @@ const homeSection = document.getElementById('home');
 const quizSection = document.getElementById('quiz');
 const resultsSection = document.getElementById('results');
 const scoresSection = document.getElementById('scores');
-const results = [];
+const highScores = [];
 const scoresContainer = document.querySelector('#scores div')
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
@@ -50,7 +50,10 @@ const showScores = () => {
     resultsSection.classList.add('hidden');
 };
 
-playBtn.addEventListener('click', showQuiz);
+playBtn.addEventListener('click', () =>{
+    showQuiz();
+    startGame();
+});
 scoresBtn.addEventListener('click', showScores);
 nextBtn.addEventListener('click', showResults);
 homeBtn.addEventListener('click', showHome);
@@ -264,6 +267,8 @@ const questions = [
     }
 ]
 
+
+
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 20;
 
@@ -274,12 +279,6 @@ const startGame =() => {
     getNewQuestion();
 };
 
-const restartGame =() => {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions];
-    getNewQuestion();
-}
 
 const getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -323,7 +322,7 @@ choices.forEach(choice => {
 
         setTimeout(() =>{
             selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
+           getNewQuestion();
         }, 1000);
     });
 });
@@ -333,9 +332,8 @@ incrementScore = num => {
     scoreText.innerText = score;
 };
 
-startGame();
-restartGame();
 
+const mostRecentScore = 0;
 const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore;
