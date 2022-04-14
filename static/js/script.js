@@ -37,6 +37,7 @@ const showQuiz = () => {
 };
 
 const showResults = () => {
+    finalScore.innerText = score;
     resultsSection.classList.remove('hidden');
     homeSection.classList.add('hidden');
     quizSection.classList.add('hidden');
@@ -276,14 +277,15 @@ const startGame =() => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
+    scoreText.innerText = score;
+    finalscore.innerText = score;
     getNewQuestion();
 };
 
 
 const getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        results.setItem('submitScores', score);
-        return resultsSection;
+        return showResults();
     };
 
     questionCounter++
@@ -328,15 +330,13 @@ choices.forEach(choice => {
 });
 
 incrementScore = num => {
-    score +=num;
+    score += num;
     scoreText.innerText = score;
 };
 
 
-const mostRecentScore = 0;
-const MAX_HIGH_SCORES = 5;
 
-finalScore.innerText = mostRecentScore;
+const MAX_HIGH_SCORES = 5;
 
 username.addEventListener('keyup', () =>{
     saveScoreBtn.disabled = !username.value;
@@ -346,7 +346,7 @@ username.addEventListener('keyup', () =>{
 
 const submitScores = () => {
         const score = {
-            score : mostRecentScore,
+            score : finalscore,
             name: username.value
         };
         highScores.push(score);
@@ -358,8 +358,8 @@ const submitScores = () => {
         highScores.splice(5);
         results.push(score);
 
-        scoresSection.innerHTML = ('mostRecentScore', score)
-    return resultsSection;
+        scoresSection.innerHTML = ('finalscore', score)
+    return submitScores;
 
 }
     

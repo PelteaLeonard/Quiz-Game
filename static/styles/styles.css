@@ -475,6 +475,14 @@ h3{
     margin-top: -3%;
 }
 
+#scores h2{
+    font-size:40px;
+    justify-content: center;
+    text-align: center;
+    margin-left: -1%;
+    margin-top: -20%;
+}
+
 @media  screen and (max-width: 768px) {
     #footer{
         font-size: 15px;
@@ -507,12 +515,12 @@ h3{
     }
     .fa-home{
         font-size: 20px;
-        margin-top: -149.8%;
+        margin-top: -180.6%;
         margin-left: 30%;
     }
     .fa-forward{
         font-size: 20px;
-        margin-top: -149.8%;
+        margin-top: -180.6%;
         margin-left: 64%;
     }
     .fa-crown{
@@ -564,7 +572,10 @@ h3{
         margin-left: -40%;
         margin-top: 40%;
     }
-   
+    #scores h2{
+        font-size:20px;
+        margin-top: -65%;
+    }
     #hud{
         margin: 10px 0;
     }
@@ -586,9 +597,14 @@ h3{
     #progressText{
         font-size: 15px;
     }
+    #finalscore{
+        font-size: 30px;
+        color: white;
+        margin-left: 18%;
+    }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 550px) {
     .container{
         height: 80vh;
         justify-content: center;
@@ -596,7 +612,7 @@ h3{
     }
     #footer{
         font-size: 10px;
-        margin-top: -3%;
+        margin-top: -2%;
     }
     h1{
         font-size: 20px;
@@ -604,13 +620,19 @@ h3{
 
     h2{
         font-size: 15px;
-        margin-top: -15%;
+        margin-top: -13%;
     }
     #play-btn{
         margin-top: -5%;
+        font-size: 15px;
+        width: 120px;
+        height: 30px;
     }
     #scores-btn{
-        margin-top: 15%;
+        margin-top: 5%;
+        font-size: 15px;
+        width: 120px;
+        height: 30px;
     }
     .fa-circle-question{
         font-size: 15px;
@@ -618,16 +640,20 @@ h3{
     }
     .fa-forward{
         font-size: 15px;
-        margin-top: -48%;
-        margin-left: 60%;;
+        margin-top: -39.5%;
+        margin-left: 55%;;
     }
     .fa-home{
         font-size: 15px;
-        margin-top: -48%;
-        margin-left: 35%;
+        margin-top: -39.5%;
+        margin-left: 40%;
     }
     .modal{
         top: -20%;
+    }
+    #scores h2{
+        font-size:20px;
+        margin-left: 6%;
     }
     p{ 
         font-size: 8px;
@@ -649,6 +675,55 @@ h3{
     }
     #highScores{
         margin:20% 0% 0% -25%;
+    }
+    #score{
+        font-size: 20px;
+    }
+    #finalScore{
+        font-size: 20px;
+        padding-top: 45px;
+    }
+    #end-text{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    #hud{
+        margin: 10px 0;
+    }
+    .hud-item{
+        font-size: 15px;
+    }
+    .hud-prefix{
+        font-size: 15px;
+    }
+    .hud-main-text{
+        margin: 0 15px;
+        padding: 0;
+    }
+    #progressBarr{
+        width: 110px;
+        height: 10px;
+        margin: 10px 0;
+    }
+    #progressText{
+        font-size: 15px;
+    }
+    .choice-container{
+        min-width: 30rem;
+        height: 30px;
+    }
+    .choice-text{
+        font-size: 20px;
+        padding: 0;
+    }
+    .choice-prefix{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    #saveScoreBtn{
+        font-size: 15px;
+        width: 100px;
+        height: 25px;
     }
    
 }
